@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <title>SPAs</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+      <a class="navbar-brand obli" id="homeBtn" href="#">SPAs</a>
+      <a class="col-md-2 btn btn-primary bold" id="viewItemsBtn" href="#">View Items &raquo;</a>
+    </nav>
+
+    <main>
+      <h1 class="white obli space-top text-center data-point">Spa Spa</h1>
+
+      <div class="text-center" id="robPic">
+        <img class="" src="images/rob.png" alt="rob" />
+      </div>
+
+      
+      <!-- <input type="button" class="col-md-2 btn btn-outline-primary bold" id="viewItemsBtn" value="View Items" /> -->
+
+      <section class="hidden white" id="categoryContainer">
+        <div class="dropdown">
+          <button type="button" class="col-md-2 btn btn-primary bold dropdown-toggle" data-toggle="dropdown">Select By Category</button>
+
+          <div class="dropdown-menu" id="categoryList">  
+          </div>
+        </div>
+      </section>
+
+      <!-- Display product listing section-->
+      <section class="hidden white" id="productsContainer">
+        <h3 id="categoryName">&nbsp;</h3>
+        <ul id="productsList"></ul>
+
+        <!-- Card Section -->
+        <div class="col-md-4 hidden" id="productCard">
+          <div class="card bg-dark" style="width: 18rem;">
+            <div class="card-body">
+              <h4 class="card-title" id="cardTitle">&nbsp;</h4>
+              <p class="card-text" id="cardText1">&nbsp;</p>
+              <p class="card-text" id="cardText2">&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container white">
+      <hr class="bg-white">
+      <p>&copy;Hartcode Academy 2019</p>
+    </footer>  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>

@@ -95,11 +95,80 @@ function filterProducts() {
         }
     ];
 
+    //let haveIt = candy.find(candy.product == "Mars")
+
+    //if(haveIt == null) console.log("Dont have it")
+    //else console.log("we got it at " + haveIt.price)
+
     let cheapCandy = candy.filter(v => v.price < 5);
 
-    for(let i = 0; i < cheapCandy.length; i++) {
-        console.log(cheapCandy[i]);
+    let sortedCandy = (candy1, candy2) => {
+        if(candy1.price > candy2.price) return 1;
+        else return -1;
     }
+
+    candy.sort(sortedCandy);
+
+    let [first, second, third] = candy;
+
+    for(let i = 0; i < candy.length; i++) {
+        //console.log(cheapCandy[i]);
+        //console.log(candy[i]);
+    }
+
+    //console.log(first);
+    //console.log(second);
+    //console.log(third);
+    //console.log(haveIt);
 }
 
 filterProducts();
+
+let movies = [
+    {
+        name: "Twister",
+        description: "Epic action disaster film",
+        yearReleased: 1996,
+        rating: "PG-13",
+        cast: ["Bill Paxton", "Helen Hunt"]
+    },
+    {
+        name: "Toy Story 4",
+        description: "Inanimate objects running around",
+        yearReleased: 2019,
+        rating: "G",
+        cast: ["Tom Hanks", "Tim Allen"]
+    },
+    {
+        name: "Mulan",
+        description: "Has a dragon",
+        yearReleased: 1998,
+        rating: "G",
+        cast: ["Ming-Na Wen", "Eddie Murphy"]
+    },
+    {
+        name: "Jurassic Park",
+        description: "Has dinosaurs",
+        yearReleased: 1993,
+        rating: "PG-13",
+        cast: ["Sam Neill", "Laura Dern"]
+    },
+    {
+        name: "Avengers Endgame",
+        description: "Epic action disaster film",
+        yearReleased: 2019,
+        rating: "PG-13",
+        cast: ["Robert Downey Jr.", "Chris Evans"]
+    },
+    {
+        name: "Frozen",
+        description: "Chilling Story",
+        yearReleased: 2013,
+        rating: "PG",
+        cast: ["Kristen Bell", "Idina Menzel"]
+    },
+]
+
+for(let {name: n, yearReleased: yr} of movies) {
+    console.log("Movie: " + n + ", Year Released: " + yr);
+}
