@@ -1,0 +1,42 @@
+body {
+    background-color: #3c4f57;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.obli {
+    font-style: oblique;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.space-top {
+    padding-top: 70px;
+}
+
+.data-point {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "arial black", helvetica, arial, sans-serif;
+    letter-spacing: -5px;
+    
+    text-shadow: 3px 3px 8px rgba(255,255,255,0.45);
+}
+
+.hidden {
+    display: none;
+}
